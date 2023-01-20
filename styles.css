@@ -7,9 +7,6 @@
     --beige: #FFEECA;
   }
   
-  
-  
-  
 @font-face {
     font-family:"ABCMaxiRoundVariable";  
     src: local("ABCMaxiRoundVariable"),
@@ -28,7 +25,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
 
 h1 {
     font-family: "ABCMaxiRoundVariable";
@@ -68,9 +64,22 @@ h1 {
 }
 
 .landingPage {
+    display: flex;
+    flex-direction: row;
     background-color: var(--brown);
     text-align: right;
     margin-bottom: 0;
+    min-height: 100vh;
+}
+.landingPage-pic {
+    width: 50em;
+    height: auto;
+    padding-left: 1em;
+}
+.landingPage-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .landingPage-text {
     font-family: "DM_Sans-Regular";
@@ -87,9 +96,7 @@ h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
-
 }
-
 .important-info-text {
     font-family: "DM_Sans-Regular";
     color: var(--beige);
@@ -101,13 +108,15 @@ h1 {
 }
 
 .sponsors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--beige);
     margin-bottom: 0;
     text-align: center;
-
-
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 }
-
 .sponsor-subheader {
     font-family: "ABCMaxiRoundVariable";
     color: var(--lightBrown);
@@ -120,10 +129,48 @@ h1 {
     margin-bottom: 0px;
     text-align: center;
 }
+.sponsor-link {
+    color: var(--lightBrown);
+}
+.sponsor-link:hover {
+    color: var(--lightBrown);
+}
 
 .prize-tracks {
     background-color: var(--orange);
-    margin-bottom: 0;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.prizes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* padding-left: 10em;
+    padding-right: 10em; */
+}
+.prize-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prize-block {
+    max-width: 50%;
+    margin-bottom: 1em;
+}
+.prize-subheader {
+    font-family: "ABCMaxiRoundVariable";
+    color: var(--brown);
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+.prize-text {
+    font-family: "DM_Sans-Regular";
+    color: var(--lightBrown);
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0px;
 }
 
 hr {
@@ -132,7 +179,10 @@ hr {
     height: 2px;
 }
 
-a  {
+.buttons {
+    padding-bottom: 2.5em;
+}
+.buttonLink  {
     background-color: var(--lightBrown); 
     border: 2px solid var(--beige);
     border-radius: 20px;
@@ -147,8 +197,7 @@ a  {
     margin-right: 1%;
     margin-left: 1%;
   }
-
-a:hover {
+.buttonLink:hover {
     text-decoration: underline;
     color: var(--beige);
 }
@@ -156,12 +205,13 @@ a:hover {
 .flex {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    /* width: 90%; */
     justify-content: center;
     align-items: center;
 }
 
 .child {
-    margin-left: 2%;
-    margin-right: 2%;
+    max-width: 40%;
+    margin-left: 2em;
+    margin-right: 2em;
 }

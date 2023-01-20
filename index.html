@@ -11,19 +11,23 @@
   <!-- page content goes into <body> -->
   <body>
     <div class="landingPage">
-        <h1>hack@brown<br/>2023
-        </h1>
-        <p class="landingPage-text">day of dashboard</p>
+        <img src="landing.png" alt="bruh" class="landingPage-pic" />
+        <div class="landingPage-title">
+            <h1>hack@brown 2023</h1>
+            <p class="landingPage-text">day of dashboard</p>
+        </div>
     </div>
 
     <div class="important-info">
         <p class="header2">Important Links</p>
-            <a href="https://www.google.com/" >Discord</a>
-            <a href="https://www.google.com/" >Hacker Guide</a>
-            <a href="https://www.google.com/" >Devpost</a>           
+        <div class="buttons">
+            <a href="https://www.google.com/" class="buttonLink" >Discord</a>
+            <a href="https://www.google.com/" class="buttonLink" >Hacker Guide</a>
+            <a href="https://www.google.com/" class="buttonLink" >Devpost</a>           
             <br/>
-            <a href="https://www.google.com/" >Code of Conduct</a>
-            <a href="https://www.google.com/" >Event Spaces</a>
+            <a href="https://www.google.com/" class="buttonLink" >Code of Conduct</a>
+            <a href="https://www.google.com/" class="buttonLink" >Event Spaces</a>
+        </div>
           
         <hr/>
 
@@ -46,32 +50,38 @@
     </div>
 
     <div class="sponsors">
-        <p class="header2"> Sponsors </p>
+        <p class="header2"> Top Sponsors </p> <!--im not sure what to say for this header-->
 
         <div class="flex">
             <div class="child">
-                <p class="sponsor-subheader"> Reliable Robotics</p>
-                <p class="sponsor-text"> blurb</p>
+                <p class="sponsor-subheader">Reliable Robotics</p>
+                <p class="sponsor-text">
+                    Reliable Robotics launched in 2017 to bring certified autonomous vehicles to commercial aviation as soon as possible. The company’s automation system enables remote operation of any aircraft type and expands access to more locations. Reliable’s vision is to transform the way we move goods and people around the planet with safer, more convenient and more affordable air transportation.
+                    <br/><br/>
+                    The company is headquartered in Mountain View, CA and has a distributed global workforce. Learn more and see job openings at <a href="https://reliable.co/" class="sponsor-link" target="_blank">reliable.co</a>. For internship opportunities please contact Chen Ye / cye@reliable.co for more details.
+                </p>
             </div>
             <div class="child">
-                <p class="sponsor-subheader"> Splitwise</p>
-                <p class="sponsor-text"> blurb</p>
+                <p class="sponsor-subheader">Splitwise</p>
+                <p class="sponsor-text">
+                    Splitwise is a Providence+NY+LA+remote company that makes it easy to split bills with friends and family. We organize all your shared expenses and IOUs in one place, so that everyone can see who they owe. We help tens of millions of people around the world to split expenses with each other, from roommates to group trips to romantic partners and more, tracking many billions of $/£/₹/€/etc every year.
+                    <br /><br />
+                    Splitwise’s mission is to remove the stress, awkwardness, and confusion that money places on our most important relationships. We’re on a journey to do even more for our customers, and are passionate about building a world-class product and solving important social problems through technology and design.
+                </p>
             </div>
             <div class="child">
-                <p class="sponsor-subheader"> Warp</p>
-                <p class="sponsor-text"> blurb</p>
+                <p class="sponsor-subheader">Intus Care</p>
+                <p class="sponsor-text">
+                    Intus Care synthesizes data to improve care and reduce hospitalizations for some of the most socially vulnerable and clinically complex patients in today’s healthcare system – senior citizens. The company has created a unique data-driven predictive analytics platform designed for organizations such as PACE programs, nursing homes, long-term care facilities, and home care agencies. It easily integrates with existing electronic health records, claims, and financial software to automatically extract and analyze data. By highlighting participant risk and care-focused information, the Intus Care software empowers clinicians, nurses, and other care providers by informing decisions that improve outcomes.
+                    <br /><br />
+                    Visit our website to learn more and to sign up for our newsletter at <a href="https://www.intuscare.com/" class="sponsor-link" target="_blank">intuscare.com</a>.
+                </p>
             </div>
             <div class="child">
-                <p class="sponsor-subheader"> Intus Care</p>
-                <p class="sponsor-text"> blurb</p>
-            </div>
-            <div class="child">
-                <p class="sponsor-subheader"> Nelson Center</p>
-                <p class="sponsor-text"> blurb</p>
-            </div>
-            <div class="child">
-                <p class="sponsor-subheader"> Flatiron Health</p>
-                <p class="sponsor-text"> blurb</p>
+                <p class="sponsor-subheader">Flatiron Health</p>
+                <p class="sponsor-text">
+                    Flatiron Health is a healthtech company dedicated to improving cancer treatment and advancing research. It is our mission to improve and extend lives by learning from the experience of every person with cancer. As the pioneer in real-world evidence for oncology, we provide technology and services to support patient care and make every patient story count. We partner with hundreds of cancer centers, 20+ top global developers of oncology therapeutics, and researchers and regulators around the world. Founded in 2012, we’ve quickly become a world leader in transforming patients’ real-life experiences into knowledge to help accelerate improvements in cancer care and treatment.
+                </p>
             </div>
         </div>
        
@@ -79,9 +89,54 @@
 
     <div class="prize-tracks">
         <p class="header2"> Prize Tracks</p>
+
+        <div class="prizes">
+            <div class="prize-column">
+                <div class="prize-block">
+                    <p class="prize-subheader">Best Overall Hack</p>
+                    <p class="prize-text">Awarded to the best overall project</p>
+                    <p class="prize-text"><b>Prize: GoPro HERO9</b></p>
+                </div>
+                <div class="prize-block">
+                    <p class="prize-subheader">Best First-Time Hack</p>
+                    <p class="prize-text">
+                        Awarded to the best overall project created by first-time hackers
+                    </p>
+                    <p class="prize-text">Prize: JBL Flip 5 Speaker</p>
+                </div>
+                <div class="prize-block">
+                    <p class="prize-subheader">Best Design Hack</p>
+                    <p class="prize-text">
+                        Awarded to the best design/prototyping project
+                    </p>
+                    <p class="prize-text">Prize: Instax Mini 7</p>
+                </div>
+            </div>
+
+            <div class="prize-column">
+                <div class="prize-block">
+                    <p class="prize-subheader">Best Climate Hack</p>
+                    <p class="prize-text">Awarded to the best climate-centric project</p>
+                    <p class="prize-text">Prize: Fitbit Inspire 3</p>
+                </div>
+                <div class="prize-block">
+                    <p class="prize-subheader">Best Hardware Hack</p>
+                    <p class="prize-text">
+                        Awarded to the best hardware project
+                    </p>
+                    <p class="prize-text">Prize: Grove Starter Kit for Arduino</p>
+                </div>
+                <div class="prize-block">
+                    <p class="prize-subheader">Best Community-Building Hack Hack</p>
+                    <p class="prize-text">
+                        Awarded to the best social good and community-oriented project
+                    </p>
+                    <p class="prize-text">Prize: Keychron V2 Keyboard</p>
+                </div>
+            </div>
+        </div>
     </div>
 
-  
   </body>
 
 </html>
