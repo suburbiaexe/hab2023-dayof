@@ -1,0 +1,167 @@
+:root {
+    --black: #170B18;
+    --brown: #542C19;
+    --lightBrown: #BA4E15;
+    --orange: #F5AD40;
+    --yellow: #FAE847;
+    --beige: #FFEECA;
+  }
+  
+  
+  
+  
+@font-face {
+    font-family:"ABCMaxiRoundVariable";  
+    src: local("ABCMaxiRoundVariable"),
+    url("ABCMaxiRoundVariable.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family:"DM_Sans-Regular";  
+    src: local("DM_Sans-Regular"),
+      url("DMSans-Regular.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: "ABCMaxiRoundVariable";
+    font-size:  70px;
+    color: var(--orange);
+    padding-right: 5%;
+}
+
+.header2 {
+    font-family: "ABCMaxiRoundVariable";
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.important-info .header2 {
+    color: var(--beige);
+    padding-top: 3%;
+}
+.sponsors .header2 {
+    color: var(--brown);
+}
+
+.prize-tracks .header2 {
+    color: var(--brown);
+}
+
+.header3 {
+    font-family: "ABCMaxiRoundVariable";
+    font-size: 40px;
+}
+
+.text {
+    font-family: "ABCMaxiRoundVariable";
+    font-size: 35px;
+    text-align: center;
+}
+
+.landingPage {
+    background-color: var(--brown);
+    text-align: right;
+    margin-bottom: 0;
+}
+.landingPage-text {
+    font-family: "DM_Sans-Regular";
+    color: var(--orange);
+    font-size: 40px;
+    margin-bottom: 0px;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.important-info {
+    background-color: var(--lightBrown);
+    margin-bottom: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.important-info-text {
+    font-family: "DM_Sans-Regular";
+    color: var(--beige);
+    font-size: 25px;
+    margin-bottom: 0px;
+    
+    padding-bottom: 5%;
+    /* text-align: left; */
+}
+
+.sponsors {
+    background-color: var(--beige);
+    margin-bottom: 0;
+    text-align: center;
+
+
+}
+
+.sponsor-subheader {
+    font-family: "ABCMaxiRoundVariable";
+    color: var(--lightBrown);
+    font-size: 30px;
+}
+.sponsor-text {
+    font-family: "DM_Sans-Regular";
+    color: var(--brown);
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.prize-tracks {
+    background-color: var(--orange);
+    margin-bottom: 0;
+}
+
+hr {
+    background-color: var(--beige);
+    width: 70%;
+    height: 2px;
+}
+
+a  {
+    background-color: var(--lightBrown); 
+    border: 2px solid var(--beige);
+    border-radius: 20px;
+    color: var(--beige);
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "DM_Sans-Regular";
+    font-size: 20px;
+    margin-top: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+
+a:hover {
+    text-decoration: underline;
+    color: var(--beige);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    margin-left: 2%;
+    margin-right: 2%;
+}
