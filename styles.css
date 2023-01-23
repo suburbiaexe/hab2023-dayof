@@ -73,6 +73,7 @@ h1 {
 }
 .landingPage-pic {
     width: 50em;
+    /* width: 100%; */
     height: auto;
     padding-left: 1em;
 }
@@ -143,34 +144,38 @@ h1 {
 }
 .prizes {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     /* padding-left: 10em;
     padding-right: 10em; */
 }
-.prize-column {
+/* .prize-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 50%;
-}
+} */
 .prize-block {
     max-width: 50%;
     margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
 }
 .prize-subheader {
     font-family: "ABCMaxiRoundVariable";
     color: var(--brown);
     font-size: 30px;
-    text-align: left;
     margin-bottom: 0px;
 }
 .prize-text {
     font-family: "DM_Sans-Regular";
     color: var(--lightBrown);
     font-size: 20px;
-    text-align: left;
     margin-bottom: 0px;
 }
 
@@ -215,4 +220,37 @@ hr {
     max-width: 40%;
     margin-left: 2em;
     margin-right: 2em;
+}
+
+@media screen and (max-width: 1028px) {
+    .landingPage {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 0;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    .landingPage-pic {
+        padding: 0;
+    }
+    
+    .landingPage-title {
+        margin-bottom: 3em;
+    }
+
+    .landingPage-text {
+        padding: 0;
+    }
+
+    h1 {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .child {
+        width: 100%;
+    }
 }
