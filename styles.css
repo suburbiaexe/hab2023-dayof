@@ -37,7 +37,7 @@ h1 {
     font-family: "ABCMaxiRoundVariable";
     font-size: 45px;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .important-info .header2 {
@@ -160,7 +160,7 @@ h1 {
     max-width: 50%;
 } */
 .prize-block {
-    max-width: 50%;
+    max-width: 25%;
     margin-bottom: 1em;
     margin-left: 2em;
     margin-right: 2em;
@@ -213,13 +213,14 @@ hr {
     flex-wrap: wrap;
     /* width: 90%; */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .child {
     max-width: 40%;
     margin-left: 2em;
     margin-right: 2em;
+    margin-bottom: 2em;
 }
 
 @media screen and (max-width: 1028px) {
@@ -234,6 +235,8 @@ hr {
 
     .landingPage-pic {
         padding: 0;
+        width: fit-content;
+        max-width: 100%;
     }
     
     .landingPage-title {
@@ -249,8 +252,16 @@ hr {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .landingPage-title .h1 {
+        padding-right: 0;
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .child {
+        max-width:max-content;
         width: 100%;
     }
 }
