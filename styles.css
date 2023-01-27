@@ -18,6 +18,15 @@
 }
 
 @font-face {
+    font-family:"DM_Sans-Bold";  
+    src: local("DM_Sans-Bold"),
+      url("DMSans-Bold.ttf") format("truetype");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family:"DM_Sans-Regular";  
     src: local("DM_Sans-Regular"),
       url("DMSans-Regular.ttf") format("truetype");
@@ -37,7 +46,7 @@ h1 {
     font-family: "ABCMaxiRoundVariable";
     font-size: 45px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
 }
 
 .important-info .header2 {
@@ -72,7 +81,7 @@ h1 {
     min-height: 100vh;
 }
 .landingPage-pic {
-    width: 50em;
+    width: 60em;
     /* width: 100%; */
     height: auto;
     padding-left: 1em;
@@ -119,9 +128,9 @@ h1 {
     padding-bottom: 2.5em;
 }
 .sponsor-subheader {
-    font-family: "ABCMaxiRoundVariable";
+    font-family: "DM_Sans-Bold";
     color: var(--lightBrown);
-    font-size: 30px;
+    font-size: 25px;
 }
 .sponsor-text {
     font-family: "DM_Sans-Regular";
@@ -148,7 +157,7 @@ h1 {
     /* justify-content: center; */
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     /* padding-left: 10em;
     padding-right: 10em; */
 }
@@ -160,20 +169,26 @@ h1 {
     max-width: 50%;
 } */
 .prize-block {
-    max-width: 25%;
-    margin-bottom: 1em;
+    max-width: 20%;
+    margin-bottom: 2em;
     margin-left: 2em;
     margin-right: 2em;
     text-align: center;
 }
 .prize-subheader {
-    font-family: "ABCMaxiRoundVariable";
+    font-family: "DM_Sans-Bold";
     color: var(--brown);
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 0px;
 }
 .prize-text {
     font-family: "DM_Sans-Regular";
+    color: var(--lightBrown);
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.prize-name {
+    font-family: "DM_Sans-Bold";
     color: var(--lightBrown);
     font-size: 20px;
     margin-bottom: 0px;
